@@ -1,0 +1,76 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Locked Out";
+}
+
+<hgroup>
+    <h1 class="text-danger">Locked out.</h1>
+    <h2 class="text-danger">This account has been locked out, please try again later.</h2>
+</hgroup>
+
+
+
+<!--/p:DeployProjA=true
+/p:PublishProfile=RestApiWebDeploy
+/p:AllowUntrustedCertificate=True
+/p:Password=LCHZAa0i3s8t1yBlv82c7Wlfi0FhcvYXLyL05iaYHu2JEXaBsGaxaFHnb8TX-->
+<!--http://vmvs.southeastasia.cloudapp.azure.com:8080/job/WebApi/configure-->
+<!--sudo apt-get update
+
+#install java
+sudo apt-get -y install default-jdk
+
+# set up a silent install of MySQL
+
+export DEBIAN_FRONTEND=noninteractive
+echo mysql-server-5.6 mysql-server/root_password password welcome123 | debconf-set-selections
+echo mysql-server-5.6 mysql-server/root_password_again password welcome123 | debconf-set-selections
+
+# install the LAMP stack
+sudo apt-get -y install mysql-server
+
+sudo sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+
+sudo service mysql restart
+
+echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'welcome123'; flush privileges;" | mysql -u root -pwelcome123
+echo "create database sonar; commit;" | mysql -u root -pwelcome123
+echo "CREATE USER 'sonar' IDENTIFIED BY 'sonar'; commit;" | mysql -u root -pwelcome123
+echo "GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'sonar'; commit;" | mysql -u root -pwelcome123
+echo "GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar'; commit; flush privileges;" | mysql -u root -pwelcome123
+wget http://dist.sonar.codehaus.org/sonarqube-5.1.zip
+sudo apt-get -y install unzip
+unzip sonarqube-5.1.zip
+sudo mv sonarqube-5.1 /opt/sonar
+
+echo "sonar.jdbc.username=root
+sonar.jdbc.password=welcome123
+sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+sonar.web.host=127.0.0.1
+sonar.web.context=/sonar
+sonar.web.port=9000
+"> /opt/sonar/conf/sonar.properties;
+cat /opt/sonar/conf/sonar.properties;
+
+sudo /opt/sonar/bin/linux-x86-64/sonar.sh start
+
+
+
+
+//Edit the config file  with command- sudo vi /opt/sonar/conf/sonar.properties;
+
+sonar.jdbc.username=root
+sonar.jdbc.password=welcome123
+sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+
+//web server
+sonar.web.host=0.0.0.0
+sonar.web.context=/sonar
+sonar.web.port=9000
+
+
+
+
+// sudo -s to come out of administrator access-->
+
