@@ -2,6 +2,7 @@
 
 namespace XUnitTest
 {
+    //
     public class Class1
     {
         [Fact]
