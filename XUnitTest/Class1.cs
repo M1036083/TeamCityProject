@@ -2,7 +2,7 @@
 
 namespace XUnitTest
 {
-    //
+    //xunit test
     public class Class1
     {
         [Fact]
