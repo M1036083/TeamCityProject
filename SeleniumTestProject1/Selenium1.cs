@@ -35,10 +35,10 @@ namespace SeleniumTestProject1
             //Environment.SetEnvironmentVariable("webdriver.gecko.driver", @"C:\Users\M1036083\Documents\visual studio 2015\Projects\EmployeeProjectwithJenkins\SeleniumTestProject1\bin\Debug\geckodriver.exe");
             // driver  = new FirefoxDriver();
 
-            //IWebDriver driver = new ChromeDriver(@"C:\Users\Priyanka\Source\Workspaces\EmployeeProjectwithJenkins\EmployeeProjectwithJenkins\SeleniumTestProject1\bin\Debug");
+            IWebDriver driver = new ChromeDriver(@"C:\TeamCity\buildAgent\work\5110fb324f79e956\SeleniumTestProject1\bin\Debug");
             // driver = new InternetExplorerDriver();//open chrome
             //driver = new ChromeDriver();//open chrome
-            driver = new ChromeDriver();
+           // driver = new ChromeDriver();
             
                 //string chromeHandle = driver.CurrentWindowHandle;
                 //driver.SwitchTo().Window(chromeHandle);
