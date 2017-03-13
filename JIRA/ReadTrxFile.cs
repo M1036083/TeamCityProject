@@ -8,17 +8,17 @@ using System.Xml;
 
 namespace JIRA
 {
-    
+
     public class ReadFile
     {
 
         public string ReadTrxFile()
         {
 
-          // var directory = new DirectoryInfo(@"C:\Results\CodedUITestProject2\10212016\201610211056Result");//vmvs
-       var directory = new DirectoryInfo(@"C:\TeamCity\buildAgent\work\5110fb324f79e956\SeleniumTestResults");//testagent
-        var newestFile = directory.GetFiles().OrderByDescending(f => f.LastWriteTime).First();
-          
+            // var directory = new DirectoryInfo(@"C:\Results\CodedUITestProject2\10212016\201610211056Result");//vmvs
+            var directory = new DirectoryInfo(@"C:\TeamCity\buildAgent\work\5110fb324f79e956\SeleniumTestResults");//testagent
+            var newestFile = directory.GetFiles().OrderByDescending(f => f.LastWriteTime).First();
+
             string result = null;
             string element = "";
             using (XmlReader xmlReader = new XmlTextReader(newestFile.FullName))
@@ -44,12 +44,12 @@ namespace JIRA
                     }
                 }
             }
-           
+
             return result;
         }
 
-        
-        
+
+
     }
-   
+
 }
