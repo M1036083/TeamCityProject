@@ -69,13 +69,14 @@ namespace JIRA
 
             // string postUrl = "http://testagent.southeastasia.cloudapp.azure.com:7000/rest/api/latest/issue";
 
-            string postUrl = "http://devopsjira.southeastasia.cloudapp.azure.com/rest/api/latest/issue";
-
+            //string postUrl = "http://devopsjira.southeastasia.cloudapp.azure.com/rest/api/latest/issue";
+            string postUrl = "https://mtdevopscoe.atlassian.net/rest/api/latest/issue";
             System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
 
             client.BaseAddress = new System.Uri(postUrl);
           //  byte[] cred = UTF8Encoding.UTF8.GetBytes("Priyanka:Ult1m@te");
-            byte[] cred = UTF8Encoding.UTF8.GetBytes("Abhideep:London@123");
+          //  byte[] cred = UTF8Encoding.UTF8.GetBytes("Abhideep:London@123");
+            byte[] cred = UTF8Encoding.UTF8.GetBytes("jitendra.kumar:Welcome@123");
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(cred));
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
