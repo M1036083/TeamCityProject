@@ -16,7 +16,7 @@ namespace JIRA
         {
 
           // var directory = new DirectoryInfo(@"C:\Results\CodedUITestProject2\10212016\201610211056Result");//vmvs
-       var directory = new DirectoryInfo(@"C:\Jenkins_WorkSpace\EmployeeProject_Build\workspace\SeleniumTestResults");//testagent
+       var directory = new DirectoryInfo(@"C:\TeamCity\buildAgent\work\5110fb324f79e956\SeleniumTestResults");//testagent
         var newestFile = directory.GetFiles().OrderByDescending(f => f.LastWriteTime).First();
           
             string result = null;
