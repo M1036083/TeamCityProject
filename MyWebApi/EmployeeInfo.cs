@@ -19,6 +19,6 @@ namespace MyWebApi
         public string DeptName { get; set; }
         public string Designation { get; set; }
         public decimal Salary { get; set; }
-        public Nullable<int> temp { get; set; }
+        public Nullable<int> random { get; set; }
     }
 }
