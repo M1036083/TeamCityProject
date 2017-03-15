@@ -32,7 +32,7 @@
           <Property Name="DeptName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Salary" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-          <Property Name="year" Type="Int32" />
+          <Property Name="temp" Type="Int32" />
         </EntityType>
         <EntityContainer Name="EmployeeEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="EmployeeInfoes" EntityType="Self.EmployeeInfo" />
@@ -46,7 +46,7 @@
           <EntitySetMapping Name="EmployeeInfoes">
             <EntityTypeMapping TypeName="EmployeeModel.EmployeeInfo">
               <MappingFragment StoreEntitySet="EmployeeInfo">
-                <ScalarProperty Name="year" ColumnName="new" />
+                <ScalarProperty Name="temp" ColumnName="new" />
                 <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
                 <ScalarProperty Name="EmpName" ColumnName="EmpName" />
                 <ScalarProperty Name="DeptName" ColumnName="DeptName" />

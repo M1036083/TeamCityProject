@@ -135,6 +135,7 @@
     <None Include="dbo\Scripts\Script10.sql" />
     <None Include="dbo\Scripts\Script12.sql" />
     <None Include="dbo\Scripts\Script14.sql" />
+    <PostDeploy Include="dbo\Scripts\Script15.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseProject1.publish.xml" />
